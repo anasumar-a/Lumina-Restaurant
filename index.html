@@ -365,29 +365,36 @@
             <div class="container">
                 <div class="reservation-box scroll-animate hidden-scale">
                     <h2 class="section-title text-center">Make a Reservation</h2>
-                    <form id="reservation-form" action="/success.html" method="GET">
-                <div class="input-group">
-                    <input type="text" id="guest-name" name="name" required placeholder=" ">
-                    <label>Full Name</label>
-                </div>
-                <div class="input-group">
-                    <input type="email" id="guest-email" name="email" required placeholder=" ">
-                    <label>Email Address</label>
-                </div>
-                <div class="input-group">
-                    <input type="number" id="guest-count" name="guests" min="1" max="20" required placeholder=" ">
-                    <label>Number of Guests</label>
-                </div>
-                <div class="input-group">
-                    <input type="date" id="guest-date" name="date" required>
-                    <label>Date</label>
-                </div>
-                <div class="input-group">
-                    <input type="time" id="guest-time" name="time" min="12:00" max="23:59" required>
-                    <label>Time</label>
-                </div>
-                <button type="submit" class="submit-btn">Request Reservation</button>
-            </form>
+                    <form id="reservation-form" name="reservation" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="reservation">
+
+                        <div class="input-group">
+                            <input type="text" id="guest-name" name="name" required placeholder=" ">
+                            <label>Full Name</label>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="email" id="guest-email" name="email" required placeholder=" ">
+                            <label>Email Address</label>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="number" id="guest-count" name="guests" min="1" max="20" required placeholder=" ">
+                            <label>Number of Guests</label>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="date" id="guest-date" name="date" required>
+                            <label>Date</label>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="time" id="guest-time" name="time" min="12:00" max="23:59" required>
+                            <label>Time</label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Request Reservation</button>
+                    </form>
                 </div>
             </div>
         </section>
