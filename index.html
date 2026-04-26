@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | Modern Fine Dining</title>
+    <meta name="description" content="Experience culinary excellence at Lumina. Modern fine dining with a creative twist.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo"> 
+            Lumina
+            <span class="logo-tagline">Modern Fine Dining.</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Concept</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#reservation" class="btn-outline">Reservation</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <img id="hero-bg" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Lumina Interior Atmosphere">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <h1>Culinary<br>Excellence</h1>
+            <p>Where tradition meets modern artistry</p>
+            <a href="#reservation" class="btn-primary">Book a Table</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about section-padding">
+            <div class="container split-layout">
+                <div class="about-text scroll-animate hidden-down">
+                    <h2 class="section-title">An Unforgettable Experience</h2>
+                    <p>At Lumina, we believe dining is an art form. Every dish is meticulously crafted using locally sourced, seasonal ingredients, brought together with innovative techniques to surprise and delight your palate.</p>
+                    <p>Our warm, intimate atmosphere sets the perfect stage for creating lasting memories.</p>
+                    <a href="#menu" class="btn-text">Discover our menu <span>→</span></a>
+                </div>
+                <div class="about-image scroll-animate hidden-up">
+                    <img id="signature_dish_img" src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1350&q=80" alt="Lumina Signature Dish" class="parallax-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <div class="container text-center scroll-animate hidden-scale">
+                <h3 class="quote">"Food is our common ground, a universal experience, elevated to pure magic at Lumina."</h3>
+                <p class="author">- The Chef</p>
+            </div>
+        </section>
+
+        <section id="menu" class="menu section-padding">
+            <div class="container">
+                <div class="text-center scroll-animate hidden-down">
+                    <h2 class="section-title">Tasting Menu</h2>
+                    <p class="subtitle">A journey through flavors</p>
+                </div>
+                
+                <h3 class="menu-category">Appetizers</h3>
+                <div class="menu-grid">
+                    <div class="menu-item scroll-animate hidden-left">
+                        <div class="menu-item-header">
+                            <h4>Truffle Beet Tartare</h4>
+                            <span class="price">$16</span>
+                        </div>
+                        <p class="menu-item-desc">Heirloom beet, black truffle vinaigrette, whipped goat cheese, micro greens</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-right">
+                        <div class="menu-item-header">
+                            <h4>Citrus Cured Scallops</h4>
+                            <span class="price">$22</span>
+                        </div>
+                        <p class="menu-item-desc">Ocean scallops, yuzu pearls, avocado mousse, shaved fennel</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-left">
+                        <div class="menu-item-header">
+                            <h4>Charred Octopus</h4>
+                            <span class="price">$24</span>
+                        </div>
+                        <p class="menu-item-desc">Smoked paprika, fingerling potato, salsa verde, crispy chickpea</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-right">
+                        <div class="menu-item-header">
+                            <h4>Foie Gras Terrine</h4>
+                            <span class="price">$26</span>
+                        </div>
+                        <p class="menu-item-desc">Terrine of foie gras, fig compote, toasted brioche, fleur de sel</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-left">
+                        <div class="menu-item-header">
+                            <h4>Crispy Duck Confit</h4>
+                            <span class="price">$20</span>
+                        </div>
+                        <p class="menu-item-desc">Duck leg confit, potato fondant, cherry gastrique, watercress</p>
+                        <div class="menu-line"></div>
+                    </div>
+                </div>
+
+                <h3 class="menu-category">Soups & Salads</h3>
+                <div class="menu-grid">
+                    <div class="menu-item scroll-animate hidden-right">
+                        <div class="menu-item-header">
+                            <h4>Roasted Cauliflower Velouté</h4>
+                            <span class="price">$14</span>
+                        </div>
+                        <p class="menu-item-desc">Silky cauliflower broth, hazelnut crumble, preserved lemon, chive oil</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-left">
+                        <div class="menu-item-header">
+                            <h4>Tomato Bisque</h4>
+                            <span class="price">$12</span>
+                        </div>
+                        <p class="menu-item-desc">Slow-cooked tomato, basil cream, crispy pancetta, parmesan tuile</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-right">
+                        <div class="menu-item-header">
+                            <h4>Winter Greens Salad</h4>
+                            <span class="price">$16</span>
+                        </div>
+                        <p class="menu-item-desc">Mixed greens, roasted beets, goat cheese, candied walnuts, truffle vinaigrette</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-left">
+                        <div class="menu-item-header">
+                            <h4>Lobster Bisque</h4>
+                            <span class="price">$18</span>
+                        </div>
+                        <p class="menu-item-desc">Maine lobster, cayenne, cognac, lobster foam, crab crumb</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-right">
+                        <div class="menu-item-header">
+                            <h4>Burrata & Heirloom</h4>
+                            <span class="price">$17</span>
+                        </div>
+                        <p class="menu-item-desc">Creamy burrata, heirloom tomatoes, basil, aged balsamic, white truffle oil</p>
+                        <div class="menu-line"></div>
+                    </div>
+                </div>
+
+                <h3 class="menu-category">Main Courses</h3>
+                <div class="menu-grid">
+                    <div class="menu-item scroll-animate hidden-left">
+                        <div class="menu-item-header">
+                            <h4>Wagyu Ribeye</h4>
+                            <span class="price">$62</span>
+                        </div>
+                        <p class="menu-item-desc">8 oz wagyu, charred broccolini, potato purée, black garlic jus</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-right">
+                        <div class="menu-item-header">
+                            <h4>Pan-Seared Halibut</h4>
+                            <span class="price">$48</span>
+                        </div>
+                        <p class="menu-item-desc">Saffron beurre blanc, roasted fennel, Mediterranean olives, almond dust</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-left">
+                        <div class="menu-item-header">
+                            <h4>Herb-Roasted Lamb Saddle</h4>
+                            <span class="price">$56</span>
+                        </div>
+                        <p class="menu-item-desc">Herb crust, smoked eggplant purée, walnut gremolata, charred asparagus</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-right">
+                        <div class="menu-item-header">
+                            <h4>Surf & Turf</h4>
+                            <span class="price">$68</span>
+                        </div>
+                        <p class="menu-item-desc">Filet mignon, Maine lobster tail, truffle butter, haricots verts</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-left">
+                        <div class="menu-item-header">
+                            <h4>Wild Mushroom Risotto</h4>
+                            <span class="price">$42</span>
+                        </div>
+                        <p class="menu-item-desc">Arborio rice, porcini conserve, Parmigiano-Reggiano, crispy sage</p>
+                        <div class="menu-line"></div>
+                    </div>
+                </div>
+
+                <h3 class="menu-category">Sides</h3>
+                <div class="menu-grid">
+                    <div class="menu-item scroll-animate hidden-right">
+                        <div class="menu-item-header">
+                            <h4>Truffle Mashed Potatoes</h4>
+                            <span class="price">$8</span>
+                        </div>
+                        <p class="menu-item-desc">Buttery mash, black truffle, aged parmesan, chive</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-left">
+                        <div class="menu-item-header">
+                            <h4>Charred Broccolini</h4>
+                            <span class="price">$7</span>
+                        </div>
+                        <p class="menu-item-desc">Garlic, chili flake, white truffle oil, sea salt</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-right">
+                        <div class="menu-item-header">
+                            <h4>Creamed Corn</h4>
+                            <span class="price">$9</span>
+                        </div>
+                        <p class="menu-item-desc">Sweet corn, butter, sage, smoked paprika</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-left">
+                        <div class="menu-item-header">
+                            <h4>Roasted Root Vegetables</h4>
+                            <span class="price">$9</span>
+                        </div>
+                        <p class="menu-item-desc">Carrots, parsnip, beet, rosemary, aged balsamic</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-right">
+                        <div class="menu-item-header">
+                            <h4>Asparagus with Hollandaise</h4>
+                            <span class="price">$10</span>
+                        </div>
+                        <p class="menu-item-desc">Fresh asparagus, silky hollandaise, crispy pancetta, sea salt</p>
+                        <div class="menu-line"></div>
+                    </div>
+                </div>
+
+                <h3 class="menu-category">Desserts</h3>
+                <div class="menu-grid">
+                    <div class="menu-item scroll-animate hidden-left">
+                        <div class="menu-item-header">
+                            <h4>Salted Caramel Opera</h4>
+                            <span class="price">$16</span>
+                        </div>
+                        <p class="menu-item-desc">Coffee sponge, hazelnut praline, dark chocolate ganache, gold leaf</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-right">
+                        <div class="menu-item-header">
+                            <h4>Pear & Almond Tart</h4>
+                            <span class="price">$15</span>
+                        </div>
+                        <p class="menu-item-desc">Buttery tart crust, frangipane, roasted pear, crème fraîche</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-left">
+                        <div class="menu-item-header">
+                            <h4>Vanilla Bean Soufflé</h4>
+                            <span class="price">$17</span>
+                        </div>
+                        <p class="menu-item-desc">Light soufflé, Tahitian vanilla custard, caramelized apple shards</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-right">
+                        <div class="menu-item-header">
+                            <h4>Dark Chocolate Sphere</h4>
+                            <span class="price">$18</span>
+                        </div>
+                        <p class="menu-item-desc">Chocolate shell, passion fruit coulis, hazelnut praline, gold dust</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-left">
+                        <div class="menu-item-header">
+                            <h4>Cheese Selection</h4>
+                            <span class="price">$20</span>
+                        </div>
+                        <p class="menu-item-desc">Assorted artisanal cheeses, fig jam, crisp lavosh, spiced nuts</p>
+                        <div class="menu-line"></div>
+                    </div>
+                </div>
+
+                <h3 class="menu-category">Beverages</h3>
+                <div class="menu-grid">
+                    <div class="menu-item scroll-animate hidden-right">
+                        <div class="menu-item-header">
+                            <h4>Espresso Martini</h4>
+                            <span class="price">$14</span>
+                        </div>
+                        <p class="menu-item-desc">Premium vodka, coffee liqueur, fresh espresso, cocoa powder</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-left">
+                        <div class="menu-item-header">
+                            <h4>Signature Cocktail</h4>
+                            <span class="price">$15</span>
+                        </div>
+                        <p class="menu-item-desc">Muddled fig, bourbon, walnut bitters, aromatic smoke</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-right">
+                        <div class="menu-item-header">
+                            <h4>House Wine Selection</h4>
+                            <span class="price">$12</span>
+                        </div>
+                        <p class="menu-item-desc">Curated selection of red, white, and rosé by the glass</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-left">
+                        <div class="menu-item-header">
+                            <h4>Sparkling Water</h4>
+                            <span class="price">$6</span>
+                        </div>
+                        <p class="menu-item-desc">San Pellegrino or Perrier with fresh citrus garnish</p>
+                        <div class="menu-line"></div>
+                    </div>
+
+                    <div class="menu-item scroll-animate hidden-right">
+                        <div class="menu-item-header">
+                            <h4>Fresh Pressed Juice</h4>
+                            <span class="price">$8</span>
+                        </div>
+                        <p class="menu-item-desc">Daily selection of freshly pressed organic vegetable and fruit juices</p>
+                        <div class="menu-line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reservation" class="reservation section-padding bg-darker">
+            <div class="container">
+                <div class="reservation-box scroll-animate hidden-scale">
+                    <h2 class="section-title text-center">Make a Reservation</h2>
+                    <form id="reservation-form" action="/success.html" method="GET">
+                <div class="input-group">
+                    <input type="text" id="guest-name" name="name" required placeholder=" ">
+                    <label>Full Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="guest-email" name="email" required placeholder=" ">
+                    <label>Email Address</label>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="guest-count" name="guests" min="1" max="20" required placeholder=" ">
+                    <label>Number of Guests</label>
+                </div>
+                <div class="input-group">
+                    <input type="date" id="guest-date" name="date" required>
+                    <label>Date</label>
+                </div>
+                <div class="input-group">
+                    <input type="time" id="guest-time" name="time" min="12:00" max="23:59" required>
+                    <label>Time</label>
+                </div>
+                <button type="submit" class="submit-btn">Request Reservation</button>
+            </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="locations" class="locations section-padding">
+        <div class="container">
+            <div class="text-center scroll-animate hidden-down">
+                <h2 class="section-title">Our Locations</h2>
+                <p class="subtitle">Find a Lumina near you</p>
+            </div>
+            <div class="locations-content">
+                <div class="map-container scroll-animate hidden-scale">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2sNew%20York,%20NY,%20USA!5e0!3m2!1sen!2sus!4v1640995200000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="branches-list">
+                    <div class="branch scroll-animate hidden-left">
+                        <h4>New York</h4>
+                        <p>123 Culinary Lane, Manhattan, NY 10001</p>
+                        <p>+1 (555) 123-4567</p>
+                        <p>Open: Mon-Sun 5PM-11PM</p>
+                    </div>
+                    <div class="branch scroll-animate hidden-right">
+                        <h4>Los Angeles</h4>
+                        <p>456 Gourmet Blvd, Hollywood, CA 90210</p>
+                        <p>+1 (555) 987-6543</p>
+                        <p>Open: Mon-Sun 5PM-11PM</p>
+                    </div>
+                    <div class="branch scroll-animate hidden-left">
+                        <h4>Chicago</h4>
+                        <p>789 Flavor St, Downtown, IL 60601</p>
+                        <p>+1 (555) 456-7890</p>
+                        <p>Open: Mon-Sun 5PM-11PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery section-padding bg-darker">
+        <div class="container">
+            <div class="text-center scroll-animate hidden-down">
+                <h2 class="section-title">Gallery</h2>
+                <p class="subtitle">A glimpse into our world</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item scroll-animate hidden-scale">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Dish 1" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-animate hidden-scale">
+                    <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=400&q=80" alt="Dish 2" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-animate hidden-scale">
+                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dish 3" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-animate hidden-scale">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80" alt="Dish 4" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-animate hidden-scale">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dish 5" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-animate hidden-scale">
+                    <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dish 6" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-animate hidden-scale">
+                    <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dish 7" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-animate hidden-scale">
+                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=400&q=80" alt="Dish 8" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-animate hidden-scale">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=400&q=80" alt="Dish 9" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews section-padding">
+        <div class="container">
+            <div class="text-center scroll-animate hidden-down">
+                <h2 class="section-title">What Our Guests Say</h2>
+                <p class="subtitle">Testimonials from our valued customers</p>
+                <div class="average-rating">
+                    <span class="average-stars">★★★★★</span>
+                    <span class="average-score">4.8</span>
+                    <span class="average-text">out of 5 stars</span>
+                </div>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card scroll-animate hidden-left">
+                    <p>"An unforgettable dining experience. The flavors were exquisite and the service impeccable."</p>
+                    <cite>- Sarah Johnson</cite>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="review-card scroll-animate hidden-right">
+                    <p>"Lumina sets the standard for fine dining. Every visit is a journey of culinary delight."</p>
+                    <cite>- Michael Chen</cite>
+                    <div class="stars">★★★★☆</div>
+                </div>
+                <div class="review-card scroll-animate hidden-left">
+                    <p>"The ambiance is perfect for special occasions. Highly recommend the tasting menu."</p>
+                    <cite>- Emily Rodriguez</cite>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="review-card scroll-animate hidden-right">
+                    <p>"Outstanding presentation and innovative flavors. The wine pairing was exceptional."</p>
+                    <cite>- David Park</cite>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="review-card scroll-animate hidden-left">
+                    <p>"A truly memorable evening. The staff was attentive and the food exceeded expectations."</p>
+                    <cite>- Lisa Thompson</cite>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+
+            <div class="leave-review scroll-animate hidden-scale">
+                <h3>Leave a Review</h3>
+                <form id="review-form" class="review-form">
+                    <div class="form-group">
+                        <label for="review-name">Name</label>
+                        <input type="text" id="review-name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="review-email">Email</label>
+                        <input type="email" id="review-email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Rating</label>
+                        <div class="star-rating">
+                            <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                            <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                            <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                            <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="review-text">Your Review</label>
+                        <textarea id="review-text" required placeholder="Share your experience..." rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="review-photo">Add a Photo (optional)</label>
+                        <input type="file" id="review-photo" accept="image/*">
+                    </div>
+                    <button type="submit" class="btn-primary">Submit Review</button>
+                </form>
+            </div>
+            <p class="backend-note">For real-time review storage, a backend service like Firebase is required</p>
+        </div>
+    </section>
+
+    <section class="hours section-padding">
+        <div class="footer-wrapper">
+            <center><h2 class="section-title">Hours of Operation</h2></center>
+            <div class="hours-grid">
+                <div class="day">
+                    <h4>Monday - Thursday</h4>
+                    <p>5:00 PM - 11:00 PM</p>
+                </div>
+                <div class="day">
+                    <h4>Friday - Saturday</h4>
+                    <p>5:00 PM - 12:00 AM</p>
+                </div>
+                <div class="day">
+                    <h4>Sunday</h4>
+                    <p>5:00 PM - 10:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-main">
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>123 Culinary Lane, Food City</p>
+                    <p>+1 (555) 123-4567</p>
+                    <p>hello@luminarestaurant.com</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for exclusive offers and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-row">
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                        <span class="social-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.057 1.97.24 2.428.403a4.92 4.92 0 0 1 1.797 1.165 4.92 4.92 0 0 1 1.165 1.798c.163.458.346 1.258.403 2.428.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.057 1.17-.24 1.97-.403 2.428a4.92 4.92 0 0 1-1.165 1.797 4.92 4.92 0 0 1-1.798 1.165c-.458.163-1.258.346-2.428.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.057-1.97-.24-2.428-.403a4.92 4.92 0 0 1-1.797-1.165 4.92 4.92 0 0 1-1.165-1.798c-.163-.458-.346-1.258-.403-2.428C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.057-1.17.24-1.97.403-2.428a4.92 4.92 0 0 1 1.165-1.797A4.92 4.92 0 0 1 5.598 2.636c.458-.163 1.258-.346 2.428-.403C8.416 2.175 8.796 2.163 12 2.163zm0 1.838c-3.17 0-3.55.012-4.8.069-1.05.05-1.62.218-1.995.363a3.05 3.05 0 0 0-1.104.71 3.05 3.05 0 0 0-.71 1.104c-.145.375-.313.945-.363 1.995-.057 1.25-.069 1.63-.069 4.8s.012 3.55.069 4.8c.05 1.05.218 1.62.363 1.995.17.448.4.829.71 1.104.275.31.656.54 1.104.71.375.145.945.313 1.995.363 1.25.057 1.63.069 4.8.069s3.55-.012 4.8-.069c1.05-.05 1.62-.218 1.995-.363a3.05 3.05 0 0 0 1.104-.71 3.05 3.05 0 0 0 .71-1.104c.145-.375.313-.945.363-1.995.057-1.25.069-1.63.069-4.8s-.012-3.55-.069-4.8c-.05-1.05-.218-1.62-.363-1.995a3.05 3.05 0 0 0-.71-1.104 3.05 3.05 0 0 0-1.104-.71c-.375-.145-.945-.313-1.995-.363-1.25-.057-1.63-.069-4.8-.069zM12 5.838a6.162 6.162 0 1 1 0 12.324 6.162 6.162 0 0 1 0-12.324zm0 10.162a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm6.406-11.845a1.44 1.44 0 1 1 0 2.88 1.44 1.44 0 0 1 0-2.88z"/>
+                            </svg>
+                        </span>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                        <span class="social-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879v-6.99H7.898v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.773-1.63 1.562v1.875h2.773l-.443 2.89h-2.33V21.88C18.343 21.128 22 16.991 22 12z"/>
+                            </svg>
+                        </span>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X">
+                        <span class="social-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M6.343 4.93a1 1 0 0 1 1.414 0L12 9.172l4.243-4.243a1 1 0 0 1 1.414 1.414L13.414 10.586l4.243 4.243a1 1 0 0 1-1.414 1.414L12 12l-4.243 4.243a1 1 0 0 1-1.414-1.414L10.586 10.586 6.343 6.343a1 1 0 0 1 0-1.414z"/>
+                            </svg>
+                        </span>
+                        <span>X</span>
+                    </a>
+                </div>
+                <div class="footer-copy">
+                    <p>&copy; 2026 Lumina Restaurant. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

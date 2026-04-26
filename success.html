@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Confirmed | Lumina</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .success-page {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0c0c0c;
+            color: #fff;
+            padding: 20px;
+        }
+        .success-content {
+            background: #111;
+            padding: 50px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 100%;
+            text-align: left;
+        }
+        .success-content h1 {
+            color: #d4af37;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        .success-content p {
+            color: #aaa;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .details-list {
+            list-style: none;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+        .details-list li {
+            color: #d4af37;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        .back-btn-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .back-btn {
+            padding: 12px 30px;
+            background-color: transparent;
+            color: #d4af37;
+            border: 1px solid #d4af37;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        .back-btn:hover {
+            background-color: #d4af37;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-page">
+        <div class="success-content fade-in appear">
+            <h1>Bravo, <span id="greeting-name">Guest</span>!</h1>
+            <p>Thanks for your reservation at Lumina.</p>
+            <p>We have received your booking:</p>
+            
+            <ul class="details-list">
+                <li>- Name: <span id="display-name"></span></li>
+                <li>- Date: <span id="display-date"></span></li>
+                <li>- Time: <span id="display-time"></span></li>
+                <li>- Guests: <span id="display-guests"></span></li>
+            </ul>
+
+            <p>We will contact you shortly to confirm everything.</p>
+            <p>- Lumina Team</p>
+            
+            <div class="back-btn-container">
+                <a href="/" class="back-btn">Return to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            // Get the name, default to 'Valued Guest' if missing
+            const guestName = urlParams.get('name') || 'Valued Guest';
+            
+            // Format the date to look a bit nicer if it exists
+            let rawDate = urlParams.get('date') || 'TBD';
+            let formattedDate = rawDate !== 'TBD' ? new Date(rawDate).toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) : rawDate;
+
+            // Inject the data into the HTML
+            document.getElementById('greeting-name').textContent = guestName.split(' ')[0]; // Uses just their first name for the H1
+            document.getElementById('display-name').textContent = guestName; // Full name in the list
+            document.getElementById('display-date').textContent = formattedDate;
+            document.getElementById('display-time').textContent = urlParams.get('time') || 'TBD';
+            document.getElementById('display-guests').textContent = urlParams.get('guests') || 'TBD';
+        });
+    </script>
+</body>
+</html>
