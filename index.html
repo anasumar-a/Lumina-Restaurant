@@ -396,21 +396,15 @@
 
   <button type="submit" class="submit-btn">Request Reservation</button>
 
-<form name="reviews" method="POST" data-netlify="true">
-
+<form name="reviews" method="POST" action="/success.html" data-netlify="true">
+  
   <input type="hidden" name="form-name" value="reviews">
 
-  <div class="input-group">
-    <input type="text" name="name" required placeholder=" ">
-    <label>Your Name</label>
-  </div>
+  <input type="text" name="name" required placeholder="Your Name">
 
-  <div class="input-group">
-    <textarea name="review" required placeholder=" "></textarea>
-    <label>Your Review</label>
-  </div>
+  <textarea name="review" required placeholder="Your Review"></textarea>
 
-  <button type="submit" class="submit-btn">Submit Review</button>
+  <button type="submit">Submit Review</button>
 
 </form>
                 </div>
