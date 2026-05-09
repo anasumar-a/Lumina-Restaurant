@@ -1175,23 +1175,22 @@ button, .btn-primary, .btn-outline {
     min-height: 44px;
 }
 
-/* Reservation Submit Button Styling */
 .submit-btn {
-    width: 100%;
-    padding: 15px;
-    background-color: #d4af37;
-    color: #000; 
-    border: none;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: 10px;
+    width: 100% !important;
+    padding: 15px !important;
+    background-color: #d4af37 !important; 
+    color: #000 !important;
+    border: none !important;
+    font-size: 1.1rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    margin-top: 10px !important;
 }
 
 .submit-btn:hover {
-    background-color: #b5952f; 
-    transform: translateY(-2px); 
+    background-color: #b5952f !important;
+    transform: translateY(-2px) !important;
 }
