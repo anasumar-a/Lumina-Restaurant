@@ -1175,6 +1175,38 @@ button, .btn-primary, .btn-outline {
     min-height: 44px;
 }
 
+
+.input-group {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    margin-bottom: 0.5rem;
+    color: #aaa;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+.input-group input:focus {
+    outline: none;
+    border-color: #d4af37;
+}
+
+.input-group input:focus + label {
+    color: #d4af37;
+}
 .submit-btn {
     width: 100% !important;
     padding: 15px !important;
@@ -1189,7 +1221,6 @@ button, .btn-primary, .btn-outline {
     font-family: 'Times New Roman', Times, serif !important;
     margin-top: 10px !important;
 }
-
 .submit-btn:hover {
     background-color: #b5952f !important;
     transform: translateY(-2px) !important;
