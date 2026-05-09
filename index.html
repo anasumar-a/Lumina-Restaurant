@@ -396,15 +396,31 @@
 
   <button type="submit" class="submit-btn">Request Reservation</button>
 
-<form name="reviews" method="POST" action="/success.html" data-netlify="true">
-  
+<form name="reviews" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success.html">
+
+  <!-- required Netlify form identifier -->
   <input type="hidden" name="form-name" value="reviews">
 
-  <input type="text" name="name" required placeholder="Your Name">
+  <!-- anti-bot field (hidden) -->
+  <p hidden>
+    <label>
+      Don’t fill this out:
+      <input name="bot-field">
+    </label>
+  </p>
 
-  <textarea name="review" required placeholder="Your Review"></textarea>
+  <!-- review inputs -->
+  <div class="input-group">
+    <input type="text" name="name" required placeholder=" ">
+    <label>Your Name</label>
+  </div>
 
-  <button type="submit">Submit Review</button>
+  <div class="input-group">
+    <textarea name="review" required placeholder=" "></textarea>
+    <label>Your Review</label>
+  </div>
+
+  <button type="submit" class="submit-btn">Submit Review</button>
 
 </form>
                 </div>
